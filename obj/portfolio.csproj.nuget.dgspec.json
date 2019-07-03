@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jaypa\\OneDrive\\CodingDojo\\portfolio\\portfolio.csproj": {}
+    "/var/www/portfolio/portfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jaypa\\OneDrive\\CodingDojo\\portfolio\\portfolio.csproj": {
+    "/var/www/portfolio/portfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaypa\\OneDrive\\CodingDojo\\portfolio\\portfolio.csproj",
+        "projectUniqueName": "/var/www/portfolio/portfolio.csproj",
         "projectName": "portfolio",
-        "projectPath": "C:\\Users\\jaypa\\OneDrive\\CodingDojo\\portfolio\\portfolio.csproj",
-        "packagesPath": "C:\\Users\\jaypa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaypa\\OneDrive\\CodingDojo\\portfolio\\obj\\",
+        "projectPath": "/var/www/portfolio/portfolio.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/var/www/portfolio/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jaypa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
