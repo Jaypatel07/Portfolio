@@ -1,0 +1,398 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+	white-space: normal;
+	text-align: center;
+	word-break: break-all;
+	z-index: 1;
+	margin-right: 1000px;
+	color: white;
+}
+
+.navbar-nav {
+	margin-left: 900px;
+}
+
+.nav-link {
+	color: #0ebfe9;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar, .header {
+	z-index: 1;
+}
+footer {
+	z-index: 1;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.stickyf+ :before {
+	padding-top: 100px;
+}
+.stickyf {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.sticky+ :after {
+	padding-top: 100px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+.border-top {
+	border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+	font-size: 1rem;
+	line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+	color: white;
+	text-align: center;
+	background-color: #262934;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	white-space: nowrap;
+	/* Set the fixed height of the footer here */
+	height: 75px;
+	line-height: 75px;
+	/* Vertically center the text there */
+}
+
+footer, header {
+	background: transparent;
+}
+
+html, body, section {
+	min-height: 800px;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+}
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.right {
+	right: 0;
+	background-color: #393f4d;
+}
+
+.split.right {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.centertitle {
+	font-size: 55px;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #0ebfe9;
+	white-space: nowrap;
+}
+
+.centertitle:before {
+	content: attr(data-heading);
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	color: #ffff;
+	z-index: 2;
+}
+
+.skillstitle {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: #ffff;
+	z-index: 2;
+}
+
+.clicked {
+	font-size: 55px;
+	z-index: 2;
+	top: 15%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	color: #0ebfe9;
+	white-space: nowrap;
+}
+
+.clicked:before {
+	content: attr(data-heading);
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	color: #ffff;
+	z-index: 2;
+}
+
+.slides {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.slides>div {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: center center;
+	transform: scale(1);
+	transition: transform 0.5s;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#slide-1 a {
+	text-decoration: none;
+	color: white;
+	width: 70px;
+	height: 70px;
+	font-size: 18px;
+	line-height: 3.77;
+	border-radius: 35px;
+	background-color: #0ebfe9;
+	transform: translate(400%, 50%);
+}
+#slide-2 a {
+	text-decoration: none;
+	color: white;
+}
+#slide-1 a:hover, #slide-2 a:hover {
+	background-color: transparent;
+}
+
+.skillicons {
+	width: 50px;
+	display: none;
+}
+
+table.table {
+	margin-top: 90px;
+	width: auto;
+	height: 80%;
+}
+
+.table th, .table td, .table thead th {
+	border: none;
+	color: white;
+}
+
+.table th {
+	text-decoration: underline;
+}
+
+.projbox {
+	position: relative;
+	width: 50%;
+}
+
+.projImg {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+
+}
+
+.projmid {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 75%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.projbox:hover .projImg {
+	opacity: 0.3;
+}
+
+.projbox:hover .projmid {
+	opacity: 1;
+}
+
+.projtext {
+	background-color: #393f4d;
+	opacity: 0.9;
+	width: 25%;
+	margin-top: 10px;
+	color: white;
+	font-size: 20px;
+	padding: 16px 15px;
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.viewcode {
+	display: none;
+}
+
+.projbox:hover .viewcode {
+	background-color: #0ebfe9;
+	color: white;
+	height: 50px;
+	opacity: 0.9;
+	border: none;
+	backface-visibility: hidden;
+	display: block;
+}
+
+ul.footerul {
+	padding: 10px 16px;
+	list-style: none;
+	line-height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+
+ul.footerul li {
+	display: inline;
+	font-size: 18px;
+}
+
+ul.footerul li+li:before {
+	padding: 8px;
+	color: white;
+	content: "\00a0";
+}
+
+ul.footerul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.fa {
+	font-size: 24px;
+}
+.profileimg {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: auto;
+	outline: 5px solid black;
+}
+
+.r2 {
+	background-color: #262934;
+	
+}
+.contactlist {
+	margin-top: 100px;
+	list-style: none;
+}
+form {
+    margin-left: 10px;
+}
+
+
+
+input :not(.emailbutton) {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.emailbutton {
+    width: 75px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+.favicon {
+	width: 16px;
+	height: 16px;
+}
+.logo {
+	width: 18px;
+	height: auto;
+	object-fit: contain;
+}

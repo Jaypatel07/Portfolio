@@ -1,0 +1,116 @@
+@{
+ViewData["Title"] = "Home | ";
+
+}
+<head>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $(".centertitle").hide();
+            $(".skillstitle").show();
+            $(".skillicons").fadeIn(2500);
+        });
+        $("#show").click(function(){
+            $(".centertitle").show();
+            $(".skillstitle").hide();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="split left">
+        <h1 class="skillstitle">Skills</h1>
+    </div>
+    <h1 class="centertitle" data-heading="Full Stack Web Developer">Full Stack
+        Web Developer</h1>
+    <div class="split right">
+        <div class="slides">
+            <div id="slide-1">
+                <a href="#slide-2" id="hide" class="animated">Skills ></a>
+            </div>
+            <div id="slide-2">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">JavaScript</th>
+                            <th scope="col">Python</th>
+                            <th scope="col">C#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row"><img
+                                    src="~/images/skill_icons/JavaScript.png"
+                                    class="skillicons"></td>
+                            <td><img src="~/images/skill_icons/Python.png"
+                                    class="skillicons"></td>
+                            <td><img src="~/images/skill_icons/c-Sharp.png"
+                                    class="skillicons"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">HTML</th>
+                            <th scope="col">CSS</th>
+                            <th scope="col">Bootstrap</th>
+
+                            <tr>
+                                <td><img src="~/images/skill_icons/HTML.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/CSS.png"
+                                        class="skillicons"></td>
+                                <td><img
+                                        src="~/images/skill_icons/Bootstrap.png"
+                                        class="skillicons"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">jQuery</th>
+                                <th scope="col">Ajax</th>
+                                <th scope="col">Socket</th>
+                                <th scope="col">Node.js</th>
+                            </tr>
+                            <tr>
+                                <td><img src="~/images/skill_icons/jQuery.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/ajax.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/socket.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/nodejs.png"
+                                        class="skillicons"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Angular</th>
+                                <th scope="col">Express</th>
+                                <th scope="col">Django</th>
+                                <th scope="col">Entity Core</th>
+                            </tr>
+                            <tr>
+                                <td><img src="~/images/skill_icons/Angular.png"
+                                        class="skillicons"></td>
+                                <td><img
+                                        src="~/images/skill_icons/expressjs.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/django.png"
+                                        class="skillicons"></td>
+                                <td>EF Core</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">MySQL</th>
+                                <th scope="col">MongoDB</th>
+                            </tr>
+                            <tr>
+                                <td><img src="~/images/skill_icons/mysql.png"
+                                        class="skillicons"></td>
+                                <td><img src="~/images/skill_icons/mongodb.png"
+                                        class="skillicons"></td>
+                                <td><a href="#slide-1" id="show" class="back"><</a></td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </body>
