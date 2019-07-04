@@ -45,6 +45,9 @@ footer {
 	bottom: 0;
 	width: 100%;
 }
+.stickyf a {
+	text-decoration: none;
+}
 
 .sticky+ :after {
 	padding-top: 100px;
