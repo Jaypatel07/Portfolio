@@ -7,32 +7,39 @@ ViewData["Title"] = "Home | ";
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
+         $(".centertitle").show();
+            $(".animated").show();
+            $(".skillstitle").hide();
+            $(".skills").hide();
+            $("#slide-1").show();
+            $("#slide-2").show();
         $("#hide").click(function(){
             $(".centertitle").hide();
+            $(".animated").hide();
             $(".skillstitle").show();
-            $(".skillicons").fadeIn(2500);
+            $(".skillicons").fadeIn(2500); 
+            $(".skills").show();
+            $("#slide-1").show();
         });
-        $("#show").click(function(){
-            $(".centertitle").show();
-            $(".skillstitle").hide();
-        });
+       
     });
     </script>
 </head>
 <body>
-    <div class="split left">
-        <h1 class="skillstitle">Skills</h1>
-    </div>
-    <h1 class="centertitle" data-heading="Full Stack Web Developer">Full Stack
-        Web Developer</h1>
-    <div class="split right">
-        <div class="slides">
-            <div id="slide-1">
-                <a href="#slide-2" id="hide" class="animated">Skills ></a>
-            </div>
-            <div id="slide-2">
+    <div class="container">
 
-                <table class="table">
+        <div class="col-lg-6 col-sm-12 left">
+            <h1 class="skillstitle">Skills</h1>
+        </div>
+        <h1 class="centertitle" data-heading="Full Stack Software Engineer">Full Stack Software
+            Engineer</h1>
+            <div class="col-lg-6 col-sm-12 right">
+            <div class="slides">
+                <div id="slide-1">
+                    <a href="#slide-2" id="hide" class="animated">Skills ></a>
+                </div>
+                <div id="slide-2">
+                <table class="skills table table-responsive">
                     <thead>
                         <tr>
                             <th scope="col">JavaScript</th>
@@ -46,26 +53,26 @@ ViewData["Title"] = "Home | ";
                                     src="~/images/skill_icons/JavaScript.png"
                                     class="skillicons"></td>
                             <td><img src="~/images/skill_icons/python.png"
-                                    class="skillicons"></td>
+                                class="skillicons"></td>
                             <td><img src="~/images/skill_icons/c-sharp.png"
-                                    class="skillicons"></td>
-                        </tr>
-                        <tr>
-                            <th scope="col">HTML</th>
-                            <th scope="col">CSS</th>
-                            <th scope="col">Bootstrap</th>
-
+                                class="skillicons"></td>
+                            </tr>
                             <tr>
+                                <th scope="col">HTML</th>
+                                <th scope="col">CSS</th>
+                                <th scope="col">Bootstrap</th>
+                                
+                                <tr>
                                 <td><img src="~/images/skill_icons/HTML.png"
                                         class="skillicons"></td>
                                 <td><img src="~/images/skill_icons/CSS.png"
-                                        class="skillicons"></td>
+                                    class="skillicons"></td>
                                 <td><img
-                                        src="~/images/skill_icons/bootstrap.png"
+                                    src="~/images/skill_icons/bootstrap.png"
                                         class="skillicons"></td>
-                            </tr>
-                            <tr>
-                                <th scope="col">jQuery</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">jQuery</th>
                                 <th scope="col">Ajax</th>
                                 <th scope="col">Socket</th>
                                 <th scope="col">Node.js</th>
@@ -73,12 +80,12 @@ ViewData["Title"] = "Home | ";
                             <tr>
                                 <td><img src="~/images/skill_icons/jQuery.png"
                                         class="skillicons"></td>
-                                <td><img src="~/images/skill_icons/ajax.png"
-                                        class="skillicons"></td>
-                                <td><img src="~/images/skill_icons/socket.png"
+                                        <td><img src="~/images/skill_icons/ajax.png"
+                                            class="skillicons"></td>
+                                            <td><img src="~/images/skill_icons/socket.png"
                                         class="skillicons"></td>
                                 <td><img src="~/images/skill_icons/nodejs.png"
-                                        class="skillicons"></td>
+                                    class="skillicons"></td>
                             </tr>
                             <tr>
                                 <th scope="col">Angular</th>
@@ -88,29 +95,31 @@ ViewData["Title"] = "Home | ";
                             </tr>
                             <tr>
                                 <td><img src="~/images/skill_icons/angular.png"
-                                        class="skillicons"></td>
+                                    class="skillicons"></td>
                                 <td><img
-                                        src="~/images/skill_icons/expressjs.png"
+                                    src="~/images/skill_icons/expressjs.png"
+                                    class="skillicons"></td>
+                                    <td><img src="~/images/skill_icons/django.png"
                                         class="skillicons"></td>
-                                <td><img src="~/images/skill_icons/django.png"
-                                        class="skillicons"></td>
-                                <td>EF Core</td>
-                            </tr>
+                                        <td>EF Core</td>
+                                    </tr>
                             <tr>
                                 <th scope="col">MySQL</th>
                                 <th scope="col">MongoDB</th>
                             </tr>
                             <tr>
                                 <td><img src="~/images/skill_icons/mysql.png"
-                                        class="skillicons"></td>
+                                    class="skillicons"></td>
                                 <td><img src="~/images/skill_icons/mongodb.png"
-                                        class="skillicons"></td>
-                                <td><a href="#slide-1" id="show" class="back"><</a></td>
-                            </tr>
-                        </tbody>
+                                    class="skillicons"></td>
+                                    <td><a href="#slide-1"  onclick="href='/'" class="back"><</a></td>
+                                </tr>
+                            </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>
-        </body>
+        </div> 
+    </div>
+</div>
+</body>

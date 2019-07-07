@@ -1,26 +1,29 @@
 <html>
     <body>
-        <ul class="contactlist">
-            <li onclick="window.location.href=
+        <div class="contactList">
+
+            <p onclick="window.location.href=
                 'https://www.linkedin.com/in/jay-patel-/';"><i
                     class="fa">&#xf08c;</i>
-                LinkedIn</li>
-            <li onclick="window.location.href=
+                LinkedIn</p>
+           
+            <p onclick="window.location.href=
                 'https://github.com/Jaypatel07';"><i class="fa">&#xf09b;</i>
-                GitHub</li>
-            <li onclick="window.location.href=
+                GitHub</p>
+           
+            <p onclick="window.location.href=
                 'mailto: 0107.patel.jay@gmail.com';">
-                0107.patel.jay@gmail.com</li>
+                0107.patel.jay@gmail.com
+            </p>
+           
+        </div>
 
-        </ul>
         <form action='mailto: 0107.patel.jay@gmail.com' method="post"
             enctype="text/plain">
             Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="email"><br>
+            <input id="name" type="text" name="name"><br>
             Message:<br>
-            <textarea type="text" name="Message" rows="4" cols="40"> </textarea>
+            <textarea type="text" name="message"> </textarea>
             <br>
             <br>
             <input class="emailbutton" type="submit" value="Send">

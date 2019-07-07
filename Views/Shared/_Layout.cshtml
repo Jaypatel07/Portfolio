@@ -4,7 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> @ViewData["Title"] Jay Patel </title>
-        <link rel="shortcut icon" type="image/png" class="favicon" href="~/images/proj_images/logo.png"/>
+        <link rel="shortcut icon" type="image/png" class="favicon"
+            href="~/images/proj_images/logo.png" />
         <environment include="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"
                 />
@@ -26,34 +27,34 @@
     </head>
     <body>
 
-        <header id="header" class="header sticky">
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
-                <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home"
-                        asp-action="Index"><img src="~/images/proj_images/logo.png" class="logo"> JAY PATEL</a>
-                    <button class="navbar-toggler" type="button"
-                        data-toggle="collapse" data-target=".navbar-collapse"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex
-                        flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area=""
-                                    asp-controller="Home" asp-action="Projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area=""
-                                    asp-controller="Home" asp-action="About">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area=""
-                                    asp-controller="Home" asp-action="Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+        <header id="header" class="header">
+            <nav class="navbar navbar-expand-lg fixed-top  justify-content-between">
+                <button class="navbar-toggler navbar-dark bg-dark" type="button"
+                    data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" asp-area="" asp-controller="Home"
+                    asp-action="Index"><img src="~/images/proj_images/logo.png"
+                        class="logo">  Jay Patel</a>
+
+                <div class="collapse navbar-collapse">
+                    <a class="navbar-brand" href="#"></a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area=""
+                                asp-controller="Home" asp-action="Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area=""
+                                asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area=""
+                                asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -63,8 +64,8 @@
             </main>
         </div>
 
-        <footer class="footer text-muted stickyf">
-            <div class="container">
+        <footer class="footer text-muted">
+            <div class="container ">
 
                 <ul class="footerul">
                     <li onclick="window.location.href=
@@ -77,8 +78,10 @@
                     <li onclick="window.location.href=
                         'mailto: 0107.patel.jay@gmail.com';">
                         0107.patel.jay@gmail.com</li>
-                    <li><a class="text-muted" href="~/docs/JayPatel_Resume.docx" download> Download Resume(Doc)</a></li>
-                    <li><a class="text-muted" href="~/docs/JayPatel_Resume.pdf" download> Download Resume(PDF)</a></li>
+                    <li><a class="text-muted" href="~/docs/Resume_JayPatel.docx"
+                            download> Download Resume(Doc)</a></li>
+                    <li><a class="text-muted" href="~/docs/Resume_JayPatel.pdf"
+                            download> Download Resume(PDF)</a></li>
                 </ul>
 
             </div>

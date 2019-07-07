@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/583fa454-ad7a-44aa-9ebe-b5f67d931717/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/jay--patel",
+    "appService.deploySubpath": "publish"
+}
